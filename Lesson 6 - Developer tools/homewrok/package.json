@@ -1,0 +1,16 @@
+{
+  "name": "homework",
+  "description": "uam js homework",
+  "author": "Mikolaj Manski",
+  "main": "script.js",
+  "dependencies": {
+    "gulp": "latest",
+    "gulp-concat": "latest",
+    "jshint": "latest",
+    "gulp-jshint": "latest"
+  },
+  "preferGlobal": true,
+  "private": true,
+  "analyze": true,
+  "license": "UNLICENSED"
+}
