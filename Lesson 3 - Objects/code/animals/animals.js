@@ -1,13 +1,41 @@
-(function (global) {
-	var Cat = null, Bird = null, Worm = null;
+(function(global) {
 
-	if (!global.UAM) {
-		global.UAM = {};
-	}
+    function Animal() {};
 
-	global.UAM.Cat = Cat;
-	global.UAM.Bird = Bird;
-	global.UAM.Worm = Worm;
+    function Cat() {};
+
+    function Bird() {};
+
+    function Worm() {};
+
+    Animal.prototype.eat = function(food) {
+        if ((this instanceof Bird && food instanceof Worm) || (this instanceof Cat && food instanceof Bird)) {
+            return 'Mniam!';
+        } else {
+            return 'Blee!';
+        }
+    };
+
+    Cat.prototype = new Animal();
+    Cat.prototype.constructor = Cat;
+
+    Bird.prototype = new Animal();
+    Bird.prototype.constructor = Bird;
+
+
+    Worm.prototype = new Animal();
+    Worm.prototype.constructor = Worm;
+
+    if (!global.UAM) {
+        global.UAM = {};
+    }
+
+    global.UAM.Cat = Cat.prototype;
+    global.UAM.Bird = Bird.prototype;
+    global.UAM.Worm = Worm.prototype;
+
+
+
 
 }(window));
 
@@ -28,5 +56,3 @@
 
 	Dodatkowo wszystkie obiekty mają korzystać ze wspólnej metody eat.
 */
-
-
