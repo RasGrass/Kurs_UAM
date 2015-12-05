@@ -1,0 +1,46 @@
+<!doctype html>  
+<head>  
+    <meta charset="utf-8">  
+    <title>Exercise 1</title>
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+   
+ </head>  
+  
+<body>  
+<h1 class="title">Aircraft management page</h1>
+<div class="aircraftForm">
+              <h2 class="title">Add new aircraft</h2>
+   <span>
+        <input id="aircraftCode" type="text" placeholder="Aircraft name">
+
+       <a href="#" id="addAircraft"><i class="fa fa-plus add"> Add</i></a>
+   </span>
+    </div>
+  <div>
+           <h2 class="title">Aircraft list</h1>
+
+
+    <table border="1" class="aircraftTable" id="aircraftTable">
+         <thead>
+             <tr>
+			<th></th>
+			<th>Aircraft name</th>
+			<th>Services</th>
+			<th colspan="3">Options</th>
+                 </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    </div>
+
+     <script src="js/aircraftService.js"></script>
+     <script src="js/events.js"></script>
+     <script src="js/readDOM.js"></script>
+     <script src="js/templates.js"></script>
+
+
+
+</body>
+</html>  

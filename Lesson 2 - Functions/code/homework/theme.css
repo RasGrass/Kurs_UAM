@@ -1,0 +1,76 @@
+body {
+    
+    background: -webkit-linear-gradient(top, #6db3f2 0%, #54a3ee 56%, #1e69de 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, #6db3f2 0%, #54a3ee 56%, #1e69de 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, #6db3f2 0%, #54a3ee 56%, #1e69de 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(top, #6db3f2 0%, #54a3ee 56%, #1e69de 100%); /* Standard syntax */
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+}
+
+.title, .aircraftForm {
+    text-align: center;
+    font-family: 'Droid Serif', sans-serif;
+}
+
+input[type=text] {padding:5px; border:2px solid #ccc; 
+-webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+input[type=text]:focus {border-color:#333; }
+
+input[type=text]:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+.aircraftTable {
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-collapse: collapse;
+    text-align: center; 
+    margin-top: 15px;
+}
+
+
+.aircraftTable td, .aircraftTable th {
+    font-size: 1em;
+    border: 1px solid #7f818c;
+    padding: 3px 7px 2px 7px;
+}
+
+.aircraftTable th {
+    font-size: 1.1em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #3333ff;
+    color: #ffffff;
+        text-align: center;
+
+}
+
+.aircraftTable tr.alt td {
+    color: #000000;
+    background-color: #3333ff;
+}
+
+div {
+    width: 100%;
+}
+
+a:hover {
+   color:white;
+}
+
+a {
+    color: black;
+}
